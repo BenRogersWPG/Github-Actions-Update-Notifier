@@ -12,8 +12,8 @@ This project will notify you in the form of a pull request when your favorite Gi
    3. On the left sidebar, click on "Code Security".
    4. Under the Dependabot section, enable the very last entry, "Dependabot on Actions runners".
    5. Enable other dependabot options if you want to be notified on other aspects of your repository too. Also important if you want to be notified on security vulnerabilities.
-5. Update the dependabot file, and replace your username with the one I have set.
-   1. Go to the `.github/dependabot.yml` file in your forked repository.
+5. To be notified when updates are available (when the monitor creates new pull requests), update the dependabot file, and replace your username with the one I have set.
+   1. Go to the [.github/dependabot.yml](.github/dependabot.yml) file in your forked repository.
    2. Update the `assignees` section with your username.
    3. Save and commit.
 
