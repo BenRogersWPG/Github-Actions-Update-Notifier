@@ -1,0 +1,48 @@
+name: GitHub Actions Update Notifier
+
+#TODO: Add run-name to make the run more descriptive
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  run_update_notifier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout using v2
+
+      - name: Cache Python environment
+        id: cache-python-env
+        uses: actions/cache@v3
+        with:
+          path: ~/.venv
+          key: ${{ runner.os }}-notifier-python
+          restore-keys: ${{ runner.os }}-notifier-python-
+
+      - name: Setup Python
+        if: steps.cache-python-env.outputs.cache-hit != 'true'
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+
+
+      - name: create issue 0
+        id: wr0
+        if: ${{ env.RESULTFOUND0 > 0 }}
+        uses: dacbd/create-issue-action@v1
+        with:
+          token: ${{ github.token }}
+          title: Test
+          body: |
+            Test
+      - name: update issue 0
+        if: ${{ env.RESULTFOUND0 > 0 }}
+        uses: julien-deramond/update-issue-body@v1
+        with:
+          issue-number: ${{ steps.wr0.outputs.number }}
+          body: |
+            test
+          edit-mode: replace
