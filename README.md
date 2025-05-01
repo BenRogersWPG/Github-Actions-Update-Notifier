@@ -1,6 +1,6 @@
 # GitHub Actions Update Notifier
 
-This project will notify you in the form of a pull request when your favorite GitHub Actions are updated.
+This project will *automatically* notify you in the form of a pull request when your favorite GitHub Actions are updated.
 
 ![Screenshot of an example run of this project, showing the pull request that was automatically created when it notified about updating actions/cache from version 3 to 4](image.png)
 
