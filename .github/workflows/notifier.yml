@@ -1,7 +1,5 @@
 name: GitHub Actions Update Notifier
 
-#TODO: Add run-name to make the run more descriptive
-
 on:
   workflow_dispatch:
 
