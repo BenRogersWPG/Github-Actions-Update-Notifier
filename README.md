@@ -6,7 +6,7 @@ This project will *automatically* notify you in the form of a pull request when 
 
 ## How To Use
 1. Fork this repository.
-2. Update the `notifier.yml` file with the actions you want to monitor. You can find the list of actions in the [notifier file](.github/workflows/notifier.yml)
+2. Update [notifier.yml](.github/workflows/notifier.yml)` with the actions you want to monitor. You can find the list of actions in the file, and I have included instructions in it to help you there, too.
 3. Save and commit
 4. Set up and run dependabot, specifically targeting GitHub Actions.
    1. Go to your forked repository on GitHub.
