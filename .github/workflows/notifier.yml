@@ -49,3 +49,16 @@ jobs:
           body: |
             test
           edit-mode: replace
+          
+      - name: Upload JSON file
+        uses: actions/upload-artifact@v1
+        with:
+          name: readme
+          path: README.md
+
+
+      - name: Get Artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: env-vars
+          
