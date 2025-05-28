@@ -1,4 +1,7 @@
 name: List of Actions to Monitor
+permissions:
+  contents: read
+  pull-requests: write
 
 # INSTRUCTIONS:
 ## ADD your actions to the list below
@@ -49,7 +52,7 @@ jobs:
           body: |
             test
           edit-mode: replace
-          
+
       - name: Upload JSON file
         uses: actions/upload-artifact@v4
         with:
@@ -61,4 +64,3 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: env-vars
-          
