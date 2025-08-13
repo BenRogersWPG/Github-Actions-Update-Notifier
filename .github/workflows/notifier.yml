@@ -16,7 +16,7 @@ jobs:
   run_update_notifier:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         name: Checkout
 
       - name: Cache Python environment
