@@ -33,7 +33,11 @@ jobs:
         with:
           python-version: "3.x"
 
-
+      # Initializes the CodeQL tools for scanning.
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: 'typescript'
 
       - name: create issue 0
         id: wr0
