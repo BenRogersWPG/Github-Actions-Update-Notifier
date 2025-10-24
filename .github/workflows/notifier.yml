@@ -65,6 +65,6 @@ jobs:
 
 
       - name: Get Artifact
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: env-vars
