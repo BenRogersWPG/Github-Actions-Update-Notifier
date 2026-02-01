@@ -27,6 +27,14 @@ jobs:
           key: ${{ runner.os }}-notifier-python
           restore-keys: ${{ runner.os }}-notifier-python-
 
+      - name: Cache Python environment (Patches)
+        id: cache-python-env-patches
+        uses: actions/cache@v5.0.2
+        with:
+          path: ~/.venv
+          key: ${{ runner.os }}-notifier-python
+          restore-keys: ${{ runner.os }}-notifier-python-
+
       - name: Setup Python
         if: steps.cache-python-env.outputs.cache-hit != 'true'
         uses: actions/setup-python@v6
