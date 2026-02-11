@@ -6,6 +6,12 @@ permissions:
 # INSTRUCTIONS:
 ## ADD your actions to the list below
 ## REMOVE any existing actions you don't want to monitor
+### Update Levels:
+  #^ Monitor all releases (even patch releases) by specifying the full version:
+    #- uses: actions/checkout@v6.0.2
+  ### or
+  #^ Monitor only full releases, by just including the top level number:
+    #- uses: actions/checkout@v6
 
 
 on:
