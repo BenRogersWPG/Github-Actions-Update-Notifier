@@ -19,13 +19,13 @@ jobs:
       - uses: actions/checkout@v6
         name: Checkout
 
-      - name: Cache Python environment
-        id: cache-python-env
-        uses: actions/cache@v5
-        with:
-          path: ~/.venv
-          key: ${{ runner.os }}-notifier-python
-          restore-keys: ${{ runner.os }}-notifier-python-
+      #- name: Cache Python environment
+      #  id: cache-python-env
+      #  uses: actions/cache@v5
+      #  with:
+      #    path: ~/.venv
+      #    key: ${{ runner.os }}-notifier-python
+      #    restore-keys: ${{ runner.os }}-notifier-python-
 
       - name: Cache Python environment (Patches)
         id: cache-python-env-patches
