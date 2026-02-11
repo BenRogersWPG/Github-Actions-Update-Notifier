@@ -28,7 +28,7 @@ When the above is all set up, you will receive a pull request when any of the ac
 
 
 ## You Are In Control
-You choose what notifications you want. You can monitor only the full releases (eg. from 3.1.5 to 4.0.0) or the patch releases. You can choose this per action too, so you can get as-granular as you want for the actions you care about the most. *(instructions how to do this are found in the [notifier.yml](.github/workflows/notifier.yml) file)*
+You choose what notifications you want. You can monitor only the full releases (eg. from 3.1.5 to 4.0.0) or the patch releases (eg. from 3.1.5 to 3.1.6). You can choose this per action too, so you can get as-granular as you want for the actions you care about the most. *(instructions how to do this are found in the [notifier.yml](.github/workflows/notifier.yml) file)*
 
 
 *This project is inspired by Mickey Gousset's [GitHub Actions idea](https://github.com/devopselvis/dependabot-version-updates-example4).*
