@@ -39,7 +39,6 @@ jobs:
         with:
           python-version: "3.x"
 
-      # Initializes the CodeQL tools for scanning.
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v4
         with:
@@ -54,6 +53,7 @@ jobs:
           title: Test
           body: |
             Test
+
       - name: update issue 0
         if: ${{ env.RESULTFOUND0 > 0 }}
         uses: julien-deramond/update-issue-body@v1.1.0
@@ -68,7 +68,6 @@ jobs:
         with:
           name: readme
           path: README.md
-
 
       - name: Get Artifact
         uses: actions/download-artifact@v7
