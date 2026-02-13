@@ -64,7 +64,7 @@ jobs:
           edit-mode: replace
 
       - name: Upload JSON file
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v6.0.0
         with:
           name: readme
           path: README.md
