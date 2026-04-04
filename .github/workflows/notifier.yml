@@ -75,7 +75,7 @@ jobs:
 
       - name: update issue 1
         if: ${{ env.RESULTFOUND0 > 0 }}
-        uses: BenRogersWPG/update-issue-body@v0.0.1
+        uses: BenRogersWPG/update-issue-body@v0.1.0
         with:
           issue-number: ${{ steps.wr1.outputs.number }}
           body: |
