@@ -54,6 +54,16 @@ jobs:
           body: |
             Test
 
+      - name: create issue 1
+        id: wr1
+        if: ${{ env.RESULTFOUND0 > 0 }}
+        uses: BenRogersWPG/create-issue-action@v0.0.1
+        with:
+          token: ${{ github.token }}
+          title: Test
+          body: |
+            Test
+
       - name: update issue 0
         if: ${{ env.RESULTFOUND0 > 0 }}
         uses: julien-deramond/update-issue-body@v1.1.0
