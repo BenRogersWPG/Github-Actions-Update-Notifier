@@ -73,6 +73,15 @@ jobs:
             test
           edit-mode: replace
 
+      - name: update issue 1
+        if: ${{ env.RESULTFOUND0 > 0 }}
+        uses: BenRogersWPG/update-issue-body@v0.0.1
+        with:
+          issue-number: ${{ steps.wr1.outputs.number }}
+          body: |
+            test
+          edit-mode: replace
+
       - name: Upload JSON file
         uses: actions/upload-artifact@v7.0.0
         with:
