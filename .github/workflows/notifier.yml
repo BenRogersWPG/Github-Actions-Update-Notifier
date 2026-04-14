@@ -83,7 +83,7 @@ jobs:
           edit-mode: replace
 
       - name: Upload JSON file
-        uses: actions/upload-artifact@v7.0.0
+        uses: actions/upload-artifact@v7.0.1
         with:
           name: readme
           path: README.md
