@@ -40,7 +40,7 @@ jobs:
           python-version: "3.x"
 
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v4
+        uses: github/codeql-action/init@v4.36.1
         with:
           languages: 'typescript'
 
@@ -89,6 +89,6 @@ jobs:
           path: README.md
 
       - name: Get Artifact
-        uses: actions/download-artifact@v8
+        uses: actions/download-artifact@v8.0.1
         with:
           name: env-vars
