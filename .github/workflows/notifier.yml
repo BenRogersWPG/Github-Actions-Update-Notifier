@@ -8,7 +8,7 @@ permissions:
 ## REMOVE any existing actions you don't want to monitor
 ### Update Levels:
   #^ Monitor all releases (even patch releases) by specifying the full version:
-    #- uses: actions/checkout@v6.0.2
+    #- uses: actions/checkout@v6.0.3
   ### or
   #^ Monitor only full releases, by just including the top level number:
     #- uses: actions/checkout@v6
@@ -22,7 +22,7 @@ jobs:
   run_update_notifier:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.3
         name: Checkout
 
       - name: Cache Python environment
