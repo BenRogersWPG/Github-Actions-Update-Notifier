@@ -35,3 +35,5 @@ You choose what notifications you want. You can monitor only the full releases (
 
 
 *This project is inspired by Mickey Gousset's [GitHub Actions idea](https://github.com/devopselvis/dependabot-version-updates-example4).*
+
+[![Dependabot Updates](https://github.com/BenRogersWPG/Github-Actions-Update-Notifier/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/BenRogersWPG/Github-Actions-Update-Notifier/actions/workflows/dependabot/dependabot-updates)
