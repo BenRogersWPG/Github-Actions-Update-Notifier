@@ -37,19 +37,19 @@ jobs:
 
       - name: Setup Python
         if: steps.cache-python-env.outputs.cache-hit != 'true'
-        uses: actions/setup-python@v6.2.0
+        uses: actions/setup-python@873163faaa7c5c02e85cdb27a7414428bee20522 # v6.2.0
         with:
           python-version: "3.x"
 
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v4.36.2
+        uses: github/codeql-action/init@8aad20d150bbac5944a9f9d289da16a4b0d87c1e # v4.36.2
         with:
           languages: 'typescript'
 
       - name: create issue 0
         id: wr0
         if: ${{ env.RESULTFOUND0 > 0 }}
-        uses: dacbd/create-issue-action@v2.0.0
+        uses: dacbd/create-issue-action@cdb57ab6ff8862aa09fee2be6ba77a59581921c2 # v2.0.0
         with:
           token: ${{ github.token }}
           title: Test
@@ -59,7 +59,7 @@ jobs:
       - name: create issue 1
         id: wr1
         if: ${{ env.RESULTFOUND0 > 0 }}
-        uses: BenRogersWPG/create-issue-action@v0.1.2
+        uses: BenRogersWPG/create-issue-action@a598c44a6ce9e33e40d28bcc8bbd5dd55f9f9e90 # v0.1.2
         with:
           token: ${{ github.token }}
           title: Test
@@ -68,7 +68,7 @@ jobs:
 
       - name: update issue 0
         if: ${{ env.RESULTFOUND0 > 0 }}
-        uses: julien-deramond/update-issue-body@v1.1.0
+        uses: julien-deramond/update-issue-body@a7fae45395cac5a23318d38f7b09a58650dfe84f # v1.1.0
         with:
           issue-number: ${{ steps.wr0.outputs.number }}
           body: |
@@ -77,7 +77,7 @@ jobs:
 
       - name: update issue 1
         if: ${{ env.RESULTFOUND0 > 0 }}
-        uses: BenRogersWPG/update-issue-body@v2.0.0
+        uses: BenRogersWPG/update-issue-body@873163faaa7c5c02e85cdb27a7414428bee20522 # v2.0.0
         with:
           issue-number: ${{ steps.wr1.outputs.number }}
           body: |
@@ -85,19 +85,19 @@ jobs:
           edit-mode: replace
 
       - name: Upload JSON file
-        uses: actions/upload-artifact@v7.0.1
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: readme
           path: README.md
 
       - name: Get Artifact
-        uses: actions/download-artifact@v8.0.1
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
           name: env-vars
 
 
       - name: Script
-        uses: actions/github-script@v8.0.0
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
         with:
           script: |
             const repo = context.repo.repo;
