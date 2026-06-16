@@ -30,7 +30,7 @@ When the above is all set up, you will receive a pull request when any of the ac
 - This project improves your application security by ensuring and enforcing that your GitHub Actions workflows abide by SHA-pinned and locked versions, preventing things like supply chain attacks and compromised/untested versions.
 
 ### Run Dependabot
-- Once you are all set, [run dependabot](../../network/updates) and try it out
+- Once you are all set, [run dependabot](../../network/updates) 🤖 and try it out!
 
 
 ## You Are In Control
