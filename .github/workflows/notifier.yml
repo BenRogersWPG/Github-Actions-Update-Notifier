@@ -44,6 +44,12 @@ jobs:
         with:
           languages: 'typescript'
 
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@8aad20d150bbac5944a9f9d289da16a4b0d87c1e # v4.36.2
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@8aad20d150bbac5944a9f9d289da16a4b0d87c1e # v4.36.2
+
       - name: create issue 0
         id: wr0
         if: ${{ env.RESULTFOUND0 > 0 }}
