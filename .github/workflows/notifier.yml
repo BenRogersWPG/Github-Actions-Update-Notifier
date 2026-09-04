@@ -65,7 +65,7 @@ jobs:
       - name: create issue 1
         id: wr1
         if: ${{ env.RESULTFOUND0 > 0 }}
-        uses: BenRogersWPG/create-issue-action@9c276cf993ebdb64b14f7949e3d2008f97d65075 # v1.0.2
+        uses: BenRogersWPG/create-issue-action@5a7a4f2a212c9ace3c8e2a80e831a8c4434ad80a # v1.0.4
         with:
           token: ${{ github.token }}
           title: Test
