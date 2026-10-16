@@ -74,7 +74,7 @@ jobs:
 
       - name: update issue 0
         if: ${{ env.RESULTFOUND0 > 0 }}
-        uses: julien-deramond/update-issue-body@v1.1.0
+        uses: julien-deramond/update-issue-body@v1.2.0
         with:
           issue-number: ${{ steps.wr0.outputs.number }}
           body: |
