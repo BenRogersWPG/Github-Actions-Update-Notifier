@@ -21,7 +21,7 @@ workflows:
         - 'benrogerswpg/update-issue-body@v2.0.2'
         - 'dacbd/create-issue-action@v2.0.0'
         - 'github/codeql-action@v4.39.1'
-        - 'julien-deramond/update-issue-body@v1.2.0'
+        - 'julien-deramond/update-issue-body@v1.2.1'
 dependencies:
     'actions/cache@v6.1.0':
         ref: 'v6.1.0'
@@ -100,8 +100,8 @@ dependencies:
         commit: 'sha1-9b3254085494b55a0f7c4c2b3d2d52cc712ce370'
         owner_id: 9919
         repo_id: 259445878
-    'julien-deramond/update-issue-body@v1.2.0':
-        ref: 'v1.2.0'
-        commit: 'sha1-8299eaea55b96a9bbd4c2504428f754ed15aab40'
+    'julien-deramond/update-issue-body@v1.2.1':
+        ref: 'v1.2.1'
+        commit: 'sha1-0cd723f2d6e07a1381afeb9a65e97ce1804e8ba2'
         owner_id: 17381666
         repo_id: 642006428
