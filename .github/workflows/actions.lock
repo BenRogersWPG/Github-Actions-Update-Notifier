@@ -22,6 +22,7 @@ workflows:
         - 'dacbd/create-issue-action@v2.0.0'
         - 'github/codeql-action@v4.39.3'
         - 'julien-deramond/update-issue-body@v1.2.1'
+        - 'astral-sh/setup-uv@v10.3.3'        
 dependencies:
     'actions/cache@v6.1.0':
         ref: 'v6.1.0'
@@ -105,3 +106,9 @@ dependencies:
         commit: 'sha1-0cd723f2d6e07a1381afeb9a65e97ce1804e8ba2'
         owner_id: 17381666
         repo_id: 642006428
+    'astral-sh/setup-uv@v10.3.3':
+        ref: 'v10.3.3'
+        commit: 'sha1-68559e99cc807c1eb7e9238fd43a15bba460eec2'
+        owner_id: 115962839
+        repo_id: 846733598
+        
