@@ -17,12 +17,12 @@ workflows:
         - 'actions/setup-python@v7.1.0'
         - 'actions/upload-artifact@v7.0.2'
         - 'actions/upload-pages-artifact@v5.0.0'
+        - 'astral-sh/setup-uv@v10.4.0'
         - 'benrogerswpg/create-issue-action@v1.0.4'
         - 'benrogerswpg/update-issue-body@v2.0.2'
         - 'dacbd/create-issue-action@v2.0.0'
         - 'github/codeql-action@v4.39.3'
         - 'julien-deramond/update-issue-body@v1.2.1'
-        - 'astral-sh/setup-uv@v10.3.3'        
 dependencies:
     'actions/cache@v6.1.0':
         ref: 'v6.1.0'
@@ -81,6 +81,11 @@ dependencies:
         repo_id: 496012378
         uses:
             - 'actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f'
+    'astral-sh/setup-uv@v10.4.0':
+        ref: 'v10.4.0'
+        commit: 'sha1-1db35dd8eee11c5894872e0b383ae6c406cf738d'
+        owner_id: 115962839
+        repo_id: 846733598
     'benrogerswpg/create-issue-action@v1.0.4':
         ref: 'v1.0.4'
         commit: 'sha1-5a7a4f2a212c9ace3c8e2a80e831a8c4434ad80a'
@@ -106,9 +111,3 @@ dependencies:
         commit: 'sha1-0cd723f2d6e07a1381afeb9a65e97ce1804e8ba2'
         owner_id: 17381666
         repo_id: 642006428
-    'astral-sh/setup-uv@v10.3.3':
-        ref: 'v10.3.3'
-        commit: 'sha1-68559e99cc807c1eb7e9238fd43a15bba460eec2'
-        owner_id: 115962839
-        repo_id: 846733598
-        
